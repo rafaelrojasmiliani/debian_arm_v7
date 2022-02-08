@@ -20,7 +20,7 @@ RUN wget https://www.python.org/ftp/python/3.8.0/Python-3.8.0.tar.xz && \
         cd Python-3.8.0 && \
         ./configure --enable-optimizations --prefix=/usr && \
         make -j 4 && \
-        checkinstall -D --fstrans=no --pkgname=python3 -y make altinstall \
+        checkinstall -D --fstrans=no --pkgname=python3 -y make altinstall && \
         dpkg -i python3*.deb
 
 
